@@ -18,7 +18,7 @@ module VirtualBox
       end
 
       def platform
-        RUBY_PLATFORM.downcase
+        Config::CONFIG['target_os']
       end
     end
   end
